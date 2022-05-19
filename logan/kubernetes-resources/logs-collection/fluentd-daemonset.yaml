@@ -66,7 +66,7 @@ spec:
       containers:
         - name: oci-la-fluentd-logs
           # Replace this value with actual docker image url
-          image: <IMAGE_URL>
+          image: phx.ocir.io/apacaseanset01/fluentd_oci_la:1.0
           # Replace this value with desired value for image pull policy
           imagePullPolicy: Always
           env:
@@ -78,16 +78,16 @@ spec:
               value: "/var/opt/conf/fluent.conf"  # change as required
             - name: FLUENT_OCI_DEFAULT_LOGGROUP_ID
               # Replace this value with actual logging analytics log group
-              value: <OCI_LOGGING_ANALYTICS_LOG_GROUP_ID>
+              value: ocid1.loganalyticsloggroup.oc1.phx.amaaaaaac7x6gxiazp5y67ifh6hfquvbd47zz3saxefaahjuvvqb5i7zly3a
             - name: FLUENT_OCI_NAMESPACE
               # Replace this value with actual namespace of logging analytics
-              value: <OCI_TENANCY_NAMESPACE>
+              value: apacaseanset01
             - name: FLUENT_OCI_KUBERNETES_CLUSTER_ID
               # Replace this value with Kubernetes Cluster ID
-              value: <KUBERNETES_CLUSTER_OCID>
+              value: ocid1.cluster.oc1.phx.aaaaaaaaotltri2o3ldop2zwkj5ilyhdgcvjvyv4yxh4dgez2cr7nvosvw3q
             - name: FLUENT_OCI_KUBERNETES_CLUSTER_NAME
               # Replace this value with Kubernetes Cluster Name
-              value: <KUBERNETES_CLUSTER_NAME>
+              value: devopsk8
             - name: OCI_READ_FROM_HEAD
               value: "true" # set it false to collect only current logs
             # Uncomment the following section if using config file base AuthZ instead of default InstancePrincipal based AuthZ.
