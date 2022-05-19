@@ -80,13 +80,13 @@ spec:
               value: "/var/opt/conf/fluent.conf"  # change as required
             - name: FLUENT_OCI_DEFAULT_LOGGROUP_ID
               # Replace this value with actual logging analytics log group
-              value: ocid1.loganalyticsloggroup.oc1.phx.amaaaaaac7x6gxiah4o4yfk73xjcmnjmke643fra6kf633szn4dy5zyofxtq
+              value: ocid1.loganalyticsloggroup.oc1.phx.xxxxx
             - name: FLUENT_OCI_NAMESPACE
               # Replace this value with actual namespace of logging analytics
               value: apacaseanset01
             - name: FLUENT_OCI_KUBERNETES_CLUSTER_ID
               # Replace this value with Kubernetes Cluster ID
-              value: ocid1.cluster.oc1.phx.aaaaaaaaotltri2o3ldop2zwkj5ilyhdgcvjvyv4yxh4dgez2cr7nvosvw3q
+              value: ocid1.cluster.oc1.phx.xxxxxx
             - name: FLUENT_OCI_KUBERNETES_CLUSTER_NAME
               # Replace this value with Kubernetes Cluster Name
               value: devopsk8
