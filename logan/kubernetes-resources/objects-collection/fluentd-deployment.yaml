@@ -80,7 +80,7 @@ spec:
               value: "/var/opt/conf/fluent.conf"  # change as required
             - name: FLUENT_OCI_DEFAULT_LOGGROUP_ID
               # Replace this value with actual logging analytics log group
-              value: ocid1.loganalyticsloggroup.oc1.phx.amaaaaaac7x6gxiazp5y67ifh6hfquvbd47zz3saxefaahjuvvqb5i7zly3a
+              value: ocid1.loganalyticsloggroup.oc1.phx.amaaaaaac7x6gxiah4o4yfk73xjcmnjmke643fra6kf633szn4dy5zyofxtq
             - name: FLUENT_OCI_NAMESPACE
               # Replace this value with actual namespace of logging analytics
               value: apacaseanset01
